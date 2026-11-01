@@ -19,7 +19,7 @@ interface Options {
 export async function api<T>(path: string, { method = "GET", token, body }: Options = {}): Promise<T> {
   let res: Response;
   try {
-    res = await fetch(`${API_URL}${path}`, {
+    res = await fetch(`${API_URL}/api/v1${path}`, {
       method,
       cache: "no-store",
       headers: {
