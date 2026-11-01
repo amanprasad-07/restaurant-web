@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/* Colours come from the Figma "Tokens" collection. Guest = light, kitchen = dark.
+   The staff layout sets data-theme="kitchen", which swaps every variable below. */
+:root {
+  --canvas: #fbf7f2;
+  --surface: #ffffff;
+  --surface-2: #f3ebe1;
+  --ink: #1f1a17;
+  --muted: #7a6f66;
+  --line: #eadfd3;
+  --primary: #c2410c;
+  --primary-soft: #fde8dc;
+  --on-primary: #ffffff;
+  --success: #2f855a;
+  --warn: #b7791f;
+  --danger: #c53030;
+  --veg: #2f9e44;
+  --nonveg: #d64545;
+}
+
+[data-theme="kitchen"] {
+  --canvas: #14110f;
+  --surface: #211c19;
+  --surface-2: #2b2521;
+  --ink: #f5eee6;
+  --muted: #a39689;
+  --line: #3a322d;
+  --primary: #f97316;
+  --primary-soft: #3a2314;
+  --on-primary: #1a0f08;
+  --success: #34d399;
+  --warn: #fbbf24;
+  --danger: #f87171;
+  --veg: #34d399;
+  --nonveg: #f87171;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-primary: var(--primary);
+  --color-primary-soft: var(--primary-soft);
+  --color-on-primary: var(--on-primary);
+  --color-success: var(--success);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --color-veg: var(--veg);
+  --color-nonveg: var(--nonveg);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--canvas);
+  color: var(--ink);
+  -webkit-tap-highlight-color: transparent;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
