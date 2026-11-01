@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="mx-auto flex min-h-dvh max-w-xl flex-col gap-8 px-6 py-14">
       <header className="space-y-2">
-        <h1 className="text-3xl font-bold">Demo Bistro</h1>
+        <h1 className="text-3xl font-bold">The Wooden Spoon</h1>
         <p className="text-muted">QR table ordering with a live kitchen display. Pick a table to play the guest, then open the kitchen screen in another window.</p>
       </header>
 

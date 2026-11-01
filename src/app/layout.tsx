@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = { variable: "" };
 
 export const metadata: Metadata = {
-  title: "Demo Bistro · Table ordering",
+  title: "The Wooden Spoon · Table ordering",
   description: "Scan, order and track your meal without leaving your seat.",
 };
 

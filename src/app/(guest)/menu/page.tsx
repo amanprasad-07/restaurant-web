@@ -140,7 +140,7 @@ export default function MenuPage() {
         <CategoryTabs categories={visible} activeId={activeCat ?? visible[0]?.id ?? null} />
       </div>
 
-      <main className="flex-1 px-5 pt-4 pb-4">
+      <main className="flex-1 px-5 pt-4 pb-40">
         {menu.isLoading && <FullScreenSpinner />}
         {menu.error && !(menu.error instanceof ApiError && menu.error.status === 401) && (
           <div className="flex flex-col items-center gap-3 py-16 text-center">
